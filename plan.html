@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Murree - Plan Your Trip</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="site-title">Visit Murree</a>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Murree</a></li>
+        <li><a href="places.html">Places to Visit</a></li>
+        <li><a href="travel.html">Travel Info</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="plan.html" class="active">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Plan Your Trip to Murree</h1>
+    <p>Send us a trip enquiry or estimate your travel budget before heading to the hills.</p>
+
+    <section class="two-col">
+      <div class="col-half">
+        <h2>Trip Enquiry Form</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="visitor-name">Full Name *</label>
+            <input type="text" id="visitor-name" name="visitor-name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="visitor-email">Email Address *</label>
+            <input type="email" id="visitor-email" name="visitor-email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="travel-date">Planned Travel Date *</label>
+            <input type="date" id="travel-date" name="travel-date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="group-size">Number of People *</label>
+            <input type="number" id="group-size" name="group-size" min="1" max="50" value="4" required>
+          </div>
+
+          <div class="form-group">
+            <label for="visitor-message">Your Message or Question *</label>
+            <textarea id="visitor-message" name="visitor-message" rows="4" placeholder="Ask about routes, weather, or places to visit..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Enquiry</button>
+        </form>
+      </div>
+
+      <div class="col-half">
+        <h2>Trip Cost Estimator</h2>
+        <p>Estimate your approximate budget for a family or student group trip (PKR):</p>
+        <form>
+          <div class="form-group">
+            <label for="calc-people">Number of Travellers</label>
+            <input type="number" id="calc-people" name="calc-people" min="1" value="4">
+          </div>
+
+          <div class="form-group">
+            <label for="calc-days">Number of Days</label>
+            <input type="number" id="calc-days" name="calc-days" min="1" value="2">
+          </div>
+
+          <div class="form-group">
+            <label for="calc-hotel">Estimated Hotel Rate per Night (PKR)</label>
+            <input type="number" id="calc-hotel" name="calc-hotel" min="0" value="6000">
+          </div>
+
+          <button type="button" class="btn">Calculate Estimated Cost</button>
+        </form>
+        <p style="margin-top: 1rem;"><strong>Estimated Total:</strong> <em>Interactive calculation will be enabled in Deliverable 3 (JavaScript).</em></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-item">
+        <h3>1. What is the best time of year to visit Murree?</h3>
+        <p>April to October offers pleasant green weather for families and hikers, while late December to February is best for experiencing snowfall.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>2. How long does it take to reach Murree from Islamabad?</h3>
+        <p>Via the Murree Expressway (E-75), the 60 km drive usually takes between 1.5 and 2 hours depending on traffic and weather conditions.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>3. Is Murree safe for student group trips?</h3>
+        <p>Yes, Murree is a popular destination for university trips. Stick to main tourist spots, check weather advisories in advance, and keep emergency contacts handy.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>Visit Murree</h3>
+        <p>A tourism information website by Group Byte Voyagers (BS CS, Bahria University Islamabad).</p>
+      </div>
+      <div>
+        <h3>Emergency Contacts</h3>
+        <p>Rescue 1122: <strong>1122</strong> | Police Emergency: <strong>15</strong></p>
+        <p>Murree Traffic Control: <strong>051-9269200</strong></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
